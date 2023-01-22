@@ -1,0 +1,10 @@
+/*Задание 3.
+Написать функцию, которая создает пустой объект, но без прототипа.*/
+
+function createEmptyObject () {
+  return Object.create(null)
+}
+
+const result = createEmptyObject();
+console.log(result);
+console.log(Object.getPrototypeOf(result));

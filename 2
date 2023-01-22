@@ -1,0 +1,11 @@
+/*Задание 2.
+Написать функцию, которая принимает в качестве аргументов строку и объект, а затем проверяет есть ли у переданного объекта свойство с данным именем. Функция должна возвращать true или false.*/
+const water = {
+    pepsi: 'aquaMinerale',
+    cocacola: 'bonAqua'
+}
+function result (water, arr) {
+    return arr in water;
+}
+console.log (result(water, 'pepsi'));
+console.log (result(water, 'bonAqua'));
